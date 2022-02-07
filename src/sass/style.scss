@@ -1,0 +1,19 @@
+//custom
+$colour-primary: #e92569;
+$colour-secondary: #767676;
+$colour-grey: #efefef;
+
+//bootstrap
+$theme-colors: (
+  "primary": $colour-primary,
+  "dark": $colour-primary,
+  "light": $colour-grey,
+);
+
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Playfair-Display", serif;
+$headings-color: $colour-primary;
+$body-bg: $colour-grey;
+$body-color: $colour-secondary;
+
+@import "~bootstrap/scss/bootstrap";
