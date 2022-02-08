@@ -1,4 +1,10 @@
-footer {
+.footer {
   height: 20vh;
-  background-color: green;
+  background-color: lightblue;
+
+  &__icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
 }
