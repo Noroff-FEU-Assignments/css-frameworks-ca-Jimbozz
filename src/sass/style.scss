@@ -16,6 +16,11 @@ $headings-color: $colour-primary;
 $body-bg: $colour-grey;
 $body-color: $colour-secondary;
 $nav-link-color: $colour-primary;
+$pagination-color: $colour-primary;
+$pagination-border-color: $colour-primary;
+$btn-font-family: $font-family-base;
+
+$pagination-active-bg: $colour-primary;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -23,3 +28,4 @@ $nav-link-color: $colour-primary;
 @import "./partials/navbar";
 @import "./partials/footer";
 @import "./partials/tabbedContent";
+@import "./partials/news";

@@ -1,0 +1,15 @@
+.card__button {
+  background-color: $colour-secondary;
+  border-radius: 4px;
+
+  .btn-button-large {
+    background-color: $colour-primary;
+    width: 85%;
+    color: white;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.card-title {
+  font-family: $font-family-base;
+}

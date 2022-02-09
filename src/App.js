@@ -10,13 +10,15 @@ import Contact from "./components/pages/Contact";
 function App() {
   return (
     <Router>
-      <Nav />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <div className="wrapper">
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 }

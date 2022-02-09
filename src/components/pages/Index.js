@@ -16,7 +16,7 @@ import TabThree from "../../assets/images/tab/tab-3.jpg";
 
 function index() {
   return (
-    <div className="wrapper">
+    <>
       <Carousel controls={false} indicators={false}>
         <Carousel.Item>
           <img
@@ -205,7 +205,7 @@ function index() {
           </Tabs>
         </div>
       </Container>
-    </div>
+    </>
   );
 }
 
