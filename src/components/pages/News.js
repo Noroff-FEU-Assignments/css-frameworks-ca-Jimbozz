@@ -15,16 +15,15 @@ import img8 from "../../assets/images/news/news-8.jpg";
 
 function News() {
   return (
-    <Container>
-      <h1>News</h1>
-      <Pagination>
+    <Container className="news">
+      <h1 className="news__heading">News</h1>
+      <Pagination className="news__pagination">
         <Pagination.Item active>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>
         <Pagination.Item>{4}</Pagination.Item>
-        <Pagination.Item>{5}</Pagination.Item>
       </Pagination>
-      <Row xs={1} md={4} className="g-3">
+      <Row xs={1} md={4} className="g-4">
         <Col>
           <Card imgsrc={img1} />
         </Col>
@@ -50,12 +49,11 @@ function News() {
           <Card imgsrc={img8} />
         </Col>
       </Row>
-      <Pagination>
+      <Pagination className="news__pagination--two">
         <Pagination.Item active>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>
         <Pagination.Item>{4}</Pagination.Item>
-        <Pagination.Item>{5}</Pagination.Item>
       </Pagination>
     </Container>
   );

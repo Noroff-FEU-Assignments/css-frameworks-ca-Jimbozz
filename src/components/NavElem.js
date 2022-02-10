@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import InputGroup from "react-bootstrap/InputGroup";
 
 function NavElem() {
   return (
@@ -26,13 +27,16 @@ function NavElem() {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <FormControl
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="primary">Search</Button>
+            <InputGroup>
+              <FormControl
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <Button variant="primary" id="button-addon2">
+                Go
+              </Button>
+            </InputGroup>
           </Form>
         </Navbar.Collapse>
       </Container>

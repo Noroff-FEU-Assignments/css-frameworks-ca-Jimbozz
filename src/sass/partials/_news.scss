@@ -1,15 +1,43 @@
-.card__button {
-  background-color: $colour-secondary;
-  border-radius: 4px;
+.news {
+  .news__heading {
+    margin: 2rem 0rem;
+  }
 
-  .btn-button-large {
-    background-color: $colour-primary;
-    width: 85%;
-    color: white;
-    border-radius: 4px 0px 0px 4px;
+  &__pagination {
+    margin-bottom: 2rem;
+
+    &--two {
+      margin: 2rem 0px 7rem 0px;
+    }
   }
 }
 
-.card-title {
-  font-family: $font-family-base;
+.card {
+  .card-img,
+  .card-img-top {
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.8rem 1.8rem;
+
+    .card-title {
+      font-family: $font-family-base;
+      color: $colour-black;
+    }
+
+    .card__button {
+      background-color: $colour-secondary;
+      border-radius: 4px;
+
+      .btn-button-large {
+        background-color: $colour-primary;
+        width: 85%;
+        color: white;
+        border-radius: 4px 0px 0px 4px;
+        padding: 0.6rem;
+      }
+    }
+  }
 }
