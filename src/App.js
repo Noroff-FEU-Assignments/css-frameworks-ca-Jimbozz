@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/pages/Index";
 import News from "./components/pages/News";
 import Contact from "./components/pages/Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (

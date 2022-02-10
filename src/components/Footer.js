@@ -2,7 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import * as Icon from "react-bootstrap-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVimeoV, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -10,8 +11,8 @@ function Footer() {
       <Container>
         <Row>
           <Col md={6} className="footer__icons">
-            <Icon.Vimeo />
-            <Icon.Youtube />
+            <FontAwesomeIcon icon={faVimeoV} />
+            <FontAwesomeIcon icon={faYoutube} />
           </Col>
           <Col>
             <Row className="justify-content-md-between footer__text">
