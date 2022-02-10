@@ -1,6 +1,8 @@
 .footer {
-  height: 20vh;
-  background-color: lightblue;
+  height: 9vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
 
   &__icons {
     display: flex;
