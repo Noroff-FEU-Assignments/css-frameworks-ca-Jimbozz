@@ -67,9 +67,9 @@ function Contact() {
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <ul className="list-unstyled">
                 <li>123 Some Street</li>
-                <li>123 Some Street</li>
-                <li>123 Some Street</li>
-                <li>123 Some Street</li>
+                <li>Somewhere</li>
+                <li>Some City</li>
+                <li>10000</li>
               </ul>
             </div>
           </Row>

@@ -2,6 +2,10 @@
 $colour-primary: #e92569;
 $colour-secondary: #767676;
 $colour-grey: #efefef;
+$colour-dark-grey: #c7c7c7;
+$colour-black: #0a0a0a;
+
+// $bg-gradient: $gradient;
 
 //bootstrap
 $theme-colors: (
@@ -9,11 +13,11 @@ $theme-colors: (
   "dark": $colour-primary,
   "light": $colour-grey,
 );
+$gradient: radial-gradient(rgba(white, 0.2), rgba(#e5e5e5, 0.5));
 
 $font-family-base: "Lato", sans-serif;
 $headings-font-family: "Playfair-Display", serif;
 $headings-color: $colour-primary;
-$body-bg: $colour-grey;
 $body-color: $colour-secondary;
 $nav-link-color: $colour-primary;
 $pagination-color: $colour-primary;

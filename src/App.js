@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
   return (
     <Router>
-      <div className="wrapper">
+      <div className="wrapper bg-gradient">
         <Nav />
         <Routes>
           <Route exact path="/" element={<Home />} />
