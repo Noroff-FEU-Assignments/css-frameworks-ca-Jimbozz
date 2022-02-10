@@ -4,7 +4,19 @@
 
   &__icons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1rem;
+
+    @media (min-width: 767px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @media (min-width: 767px) {
+      text-align: left;
+    }
   }
 }
