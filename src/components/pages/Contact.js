@@ -15,8 +15,8 @@ import {
 
 function Contact() {
   return (
-    <Container>
-      <h1>Submit your details</h1>
+    <Container className="top__padding">
+      <h1 className="contact__heading">Submit your details</h1>
       <Row>
         <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
           <Form>

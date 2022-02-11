@@ -17,7 +17,7 @@ import TabThree from "../../assets/images/tab/tab-3.jpg";
 function index() {
   return (
     <>
-      <Carousel controls={false} indicators={false}>
+      <Carousel className="top__padding" controls={false} indicators={false}>
         <Carousel.Item>
           <img
             className="d-block w-100 container__image"
@@ -47,7 +47,7 @@ function index() {
           a, varius eget massa.
         </p>
       </Container>
-      <Container>
+      <Container className="tabs">
         <Accordion defaultActiveKey="0" className="d-md-none">
           <Accordion.Item eventKey="0">
             <Accordion.Header>First</Accordion.Header>
@@ -64,7 +64,7 @@ function index() {
                 src={TabOne}
                 alt="Television against wall"
               />
-              <Row className="tabbed__content">
+              <Row className="tab__icons">
                 SHARE
                 <Icon.Facebook />
                 <Icon.Twitter />
@@ -86,7 +86,7 @@ function index() {
                 src={TabTwo}
                 alt="Frames on wall"
               />
-              <Row className="tabbed__content">
+              <Row className="tab__icons">
                 SHARE
                 <Icon.Facebook />
                 <Icon.Twitter />
@@ -108,7 +108,7 @@ function index() {
                 src={TabThree}
                 alt="Rusted wall with window"
               />
-              <Row className="tabbed__content">
+              <Row className="tab__icons">
                 SHARE
                 <Icon.Facebook />
                 <Icon.Twitter />
@@ -139,7 +139,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </Row>
-                    <Row className="tabbed__content">
+                    <Row className="tab__icons">
                       SHARE
                       <Icon.Facebook />
                       <Icon.Twitter />
@@ -166,7 +166,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </Row>
-                    <Row className="tabbed__content">
+                    <Row className="tab__icons">
                       SHARE
                       <Icon.Facebook />
                       <Icon.Twitter />
@@ -193,7 +193,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </Row>
-                    <Row className="tabbed__content">
+                    <Row className="tab__icons">
                       SHARE
                       <Icon.Facebook />
                       <Icon.Twitter />

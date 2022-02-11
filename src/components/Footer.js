@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <Container>
         <Row>
-          <Col md={6} className="footer__icons">
+          <Col md={5} className="footer__icons">
             <FontAwesomeIcon icon={faVimeoV} />
             <FontAwesomeIcon icon={faYoutube} />
           </Col>

@@ -1,6 +1,12 @@
-.navbar__brand {
-  font-family: $headings-font-family;
-  font-style: italic;
-  color: $colour-primary !important;
-  font-weight: 600;
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+  &__brand {
+    font-family: $headings-font-family;
+    font-style: italic;
+    color: $colour-primary !important;
+    font-weight: 600;
+  }
 }

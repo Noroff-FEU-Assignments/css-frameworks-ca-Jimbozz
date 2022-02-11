@@ -1,0 +1,28 @@
+.tabs {
+  margin-bottom: 4rem;
+
+  .nav-tabs {
+    margin-bottom: 0px !important;
+    border-bottom: none !important;
+  }
+
+  .tab-content {
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
+    border-right: 1px solid $gray-300;
+    border-left: 1px solid $gray-300;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+  }
+
+  .tab__icons {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    svg {
+      width: 10%;
+    }
+  }
+}

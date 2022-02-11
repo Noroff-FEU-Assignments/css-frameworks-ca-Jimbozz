@@ -15,7 +15,7 @@ import img8 from "../../assets/images/news/news-8.jpg";
 
 function News() {
   return (
-    <Container className="news">
+    <Container className="news top__padding">
       <h1 className="news__heading">News</h1>
       <Pagination className="news__pagination">
         <Pagination.Item active>{1}</Pagination.Item>
@@ -23,7 +23,7 @@ function News() {
         <Pagination.Item>{3}</Pagination.Item>
         <Pagination.Item>{4}</Pagination.Item>
       </Pagination>
-      <Row xs={1} md={4} className="g-4">
+      <Row xs={1} sm={2} md={4} className="g-4">
         <Col>
           <Card imgsrc={img1} />
         </Col>
