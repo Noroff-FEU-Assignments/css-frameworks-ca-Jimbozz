@@ -6,20 +6,25 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
+import { NavLink } from "react-router-dom";
 
 function NavElem() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="md" className="fixed-top">
       <Container>
-        <Navbar.Brand href="/" className="navbar__brand">
-          The YAY Company
-        </Navbar.Brand>
+        <Navbar.Brand href="/">The YAY Company</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/news">News</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <NavLink className={"nav__style"} to="/">
+              Home
+            </NavLink>
+            <NavLink className={"nav__style"} to="/news">
+              News
+            </NavLink>
+            <NavLink className={"nav__style"} to="/contact">
+              Contact
+            </NavLink>
           </Nav>
           <Form className="d-flex">
             <InputGroup>

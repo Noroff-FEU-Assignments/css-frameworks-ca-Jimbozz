@@ -1,5 +1,27 @@
+//carousel
+.carousel-item {
+  height: 50vh;
+
+  @media (min-width: 767px) {
+    height: inherit;
+  }
+
+  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//intro
+
+.intro {
+  margin: 3rem auto;
+}
+//tabs
+
 .tabs {
-  margin-bottom: 4rem;
+  margin: 4rem auto 10rem auto;
 
   .nav-tabs {
     margin-bottom: 0px !important;
@@ -8,21 +30,32 @@
 
   .tab-content {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem 0px 5rem 0px;
     border-bottom: 1px solid $gray-300;
     border-top: 1px solid $gray-300;
     border-right: 1px solid $gray-300;
     border-left: 1px solid $gray-300;
-    border-radius: 0px 10px 10px 10px;
+    border-radius: $border-radius;
+    border-top-left-radius: 0px;
     box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+    color: $colour-black;
   }
 
   .tab__icons {
-    align-items: center;
-    flex-wrap: nowrap;
+    margin-top: 3rem;
+    gap: 1.5rem;
 
-    svg {
-      width: 10%;
+    .svg-inline--fa {
+      height: 2rem;
+      color: $colour-dark-grey;
+
+      &:hover {
+        color: $colour-black;
+      }
     }
+  }
+
+  .nav-link {
+    padding: 0.7rem 2rem;
   }
 }

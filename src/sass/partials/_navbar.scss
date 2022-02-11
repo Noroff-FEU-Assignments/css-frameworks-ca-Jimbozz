@@ -1,12 +1,47 @@
 .navbar {
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
+  &-toggler {
+    border: none;
+  }
 
-  &__brand {
+  .nav__style {
+    padding-left: 1rem;
+
+    @media (min-width: 767px) {
+      padding-left: 0px;
+    }
+  }
+
+  &-brand {
     font-family: $headings-font-family;
     font-style: italic;
     color: $colour-primary !important;
     font-weight: 600;
+    padding-right: 2rem;
+  }
+
+  &-nav {
+    gap: 1rem;
+    align-items: flex-start;
+
+    @media (min-width: 767px) {
+      align-items: center;
+    }
+  }
+
+  .active {
+    background: white;
+    height: 100%;
+    padding: 10px 1rem;
+    border-radius: 0px;
+    width: 100%;
+
+    @media (min-width: 767px) {
+      border-radius: 4px;
+      padding: 2px 15px;
+    }
+  }
+
+  .btn-primary {
+    color: white;
   }
 }

@@ -6,13 +6,15 @@ import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
-import * as Icon from "react-bootstrap-icons";
 import SlideOne from "../../assets/images/carousel/carousel-1.jpg";
 import SlideTwo from "../../assets/images/carousel/carousel-2.jpg";
 import SlideThree from "../../assets/images/carousel/carousel-3.jpg";
 import TabOne from "../../assets/images/tab/tab-1.jpg";
 import TabTwo from "../../assets/images/tab/tab-2.jpg";
 import TabThree from "../../assets/images/tab/tab-3.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function index() {
   return (
@@ -20,7 +22,7 @@ function index() {
       <Carousel className="top__padding" controls={false} indicators={false}>
         <Carousel.Item>
           <img
-            className="d-block w-100 container__image"
+            className="d-block w-100"
             src={SlideOne}
             alt="bicycle and old televisions on shelves"
           />
@@ -36,7 +38,7 @@ function index() {
           />
         </Carousel.Item>
       </Carousel>
-      <Container>
+      <Container className="intro">
         <h1>We do YAY things</h1>
         <p>
           Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a
@@ -64,11 +66,11 @@ function index() {
                 src={TabOne}
                 alt="Television against wall"
               />
-              <Row className="tab__icons">
+              <div className="tab__icons">
                 SHARE
-                <Icon.Facebook />
-                <Icon.Twitter />
-              </Row>
+                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -86,11 +88,11 @@ function index() {
                 src={TabTwo}
                 alt="Frames on wall"
               />
-              <Row className="tab__icons">
+              <div className="tab__icons">
                 SHARE
-                <Icon.Facebook />
-                <Icon.Twitter />
-              </Row>
+                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
@@ -108,11 +110,11 @@ function index() {
                 src={TabThree}
                 alt="Rusted wall with window"
               />
-              <Row className="tab__icons">
+              <div className="tab__icons">
                 SHARE
-                <Icon.Facebook />
-                <Icon.Twitter />
-              </Row>
+                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -132,18 +134,22 @@ function index() {
                     />
                   </Col>
                   <Col>
-                    <Row>
+                    <div>
                       Morbi eget efficitur turpis. Vivamus pellentesque tortor
                       massa, venenatis pharetra leo laoreet a. Nullam non
                       eleifend justo, a ullamcorper turpis. Cras vehicula
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
-                    </Row>
-                    <Row className="tab__icons">
+                    </div>
+                    <div className="tab__icons d-flex align-items-center">
                       SHARE
-                      <Icon.Facebook />
-                      <Icon.Twitter />
-                    </Row>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                      </Link>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faTwitter} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Container>
@@ -159,18 +165,22 @@ function index() {
                     />
                   </Col>
                   <Col>
-                    <Row>
+                    <div>
                       Morbi eget efficitur turpis. Vivamus pellentesque tortor
                       massa, venenatis pharetra leo laoreet a. Nullam non
                       eleifend justo, a ullamcorper turpis. Cras vehicula
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
-                    </Row>
-                    <Row className="tab__icons">
+                    </div>
+                    <div className="tab__icons d-flex align-items-center">
                       SHARE
-                      <Icon.Facebook />
-                      <Icon.Twitter />
-                    </Row>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                      </Link>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faTwitter} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Container>
@@ -186,18 +196,22 @@ function index() {
                     />
                   </Col>
                   <Col>
-                    <Row>
+                    <div>
                       Morbi eget efficitur turpis. Vivamus pellentesque tortor
                       massa, venenatis pharetra leo laoreet a. Nullam non
                       eleifend justo, a ullamcorper turpis. Cras vehicula
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
-                    </Row>
-                    <Row className="tab__icons">
+                    </div>
+                    <div className="tab__icons d-flex align-items-center">
                       SHARE
-                      <Icon.Facebook />
-                      <Icon.Twitter />
-                    </Row>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                      </Link>
+                      <Link to="/#">
+                        <FontAwesomeIcon icon={faTwitter} />
+                      </Link>
+                    </div>
                   </Col>
                 </Row>
               </Container>

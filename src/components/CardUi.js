@@ -12,7 +12,9 @@ function CardUi(props) {
           Nunc malesuada eget est fringilla dapibus.
         </Card.Text>
         <div className="card__button">
-          <Button variant="button-large">MORE</Button>
+          <Button variant="button-large" className="stretched-link">
+            MORE
+          </Button>
         </div>
       </Card.Body>
     </Card>
