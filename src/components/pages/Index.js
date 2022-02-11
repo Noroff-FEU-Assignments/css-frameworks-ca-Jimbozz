@@ -41,79 +41,82 @@ function index() {
       <Container className="intro">
         <h1>We do YAY things</h1>
         <p>
-          Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a
-          rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend
-          finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet,
-          consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa
-          euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
-          a, varius eget massa.
+          Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
+          venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
+          ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
         </p>
       </Container>
       <Container className="tabs">
-        <Accordion defaultActiveKey="0" className="d-md-none">
+        <Accordion defaultActiveKey="0" className="d-md-none shadow">
           <Accordion.Item eventKey="0">
             <Accordion.Header>First</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>
+                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
+                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
+                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
+              </p>
               <img
                 className="d-block w-100"
                 src={TabOne}
                 alt="Television against wall"
               />
-              <div className="tab__icons">
+              <div className="accordion__icons">
                 SHARE
-                <FontAwesomeIcon icon={faFacebookF} />
-                <FontAwesomeIcon icon={faTwitter} />
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </Link>
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Link>
               </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>Second</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>
+                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
+                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
+                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
+              </p>
               <img
                 className="d-block w-100"
                 src={TabTwo}
                 alt="Frames on wall"
               />
-              <div className="tab__icons">
+              <div className="accordion__icons">
                 SHARE
-                <FontAwesomeIcon icon={faFacebookF} />
-                <FontAwesomeIcon icon={faTwitter} />
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </Link>
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Link>
               </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>Third</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>
+                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
+                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
+                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
+              </p>
               <img
                 className="d-block w-100"
                 src={TabThree}
                 alt="Rusted wall with window"
               />
-              <div className="tab__icons">
+              <div className="accordion__icons">
                 SHARE
-                <FontAwesomeIcon icon={faFacebookF} />
-                <FontAwesomeIcon icon={faTwitter} />
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </Link>
+                <Link to="/#">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Link>
               </div>
             </Accordion.Body>
           </Accordion.Item>
@@ -173,7 +176,7 @@ function index() {
                       rhoncus.
                     </div>
                     <div className="tab__icons d-flex align-items-center">
-                      SHARE
+                      <div>SHARE</div>
                       <Link to="/#">
                         <FontAwesomeIcon icon={faFacebookF} />
                       </Link>

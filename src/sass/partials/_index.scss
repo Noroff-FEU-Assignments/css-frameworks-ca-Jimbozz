@@ -38,12 +38,13 @@
     border-radius: $border-radius;
     border-top-left-radius: 0px;
     box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
-    color: $colour-black;
   }
 
   .tab__icons {
+    display: flex;
     margin-top: 3rem;
     gap: 1.5rem;
+    color: $colour-black;
 
     .svg-inline--fa {
       height: 2rem;
@@ -58,4 +59,39 @@
   .nav-link {
     padding: 0.7rem 2rem;
   }
+}
+
+//accordion
+
+.accordion {
+  border-radius: 6px;
+
+  &__icons {
+    color: $colour-black;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .svg-inline--fa {
+      height: 2rem;
+    }
+  }
+
+  .accordion-header {
+    font-family: $primary-font;
+
+    .accordion-button {
+      color: $colour-primary;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.show {
+  border-top: 1px solid red;
 }

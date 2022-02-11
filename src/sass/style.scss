@@ -3,6 +3,7 @@ $colour-primary: #e92569;
 $colour-secondary: #767676;
 $colour-grey: #efefef;
 $colour-dark-grey: #c7c7c7;
+$primary-font: "Lato", sans-serif;
 $colour-black: #0a0a0a;
 .top__padding {
   padding-top: 3rem;
@@ -15,7 +16,7 @@ $theme-colors: (
   "light": $colour-grey,
 );
 $gradient: radial-gradient(rgba(white, 0.2), rgba(#e5e5e5, 0.5));
-$font-family-base: "Lato", sans-serif;
+$font-family-base: $primary-font;
 $headings-font-family: "Playfair Display", serif;
 $headings-color: $colour-primary;
 $body-color: $colour-secondary;
@@ -33,6 +34,11 @@ $link-decoration: none;
 $link-color: $colour-black;
 $grid-gutter-width: 4rem;
 $border-radius: 0.4rem;
+$accordion-bg: $gradient;
+$accordion-color: $colour-primary;
+$accordion-button-active-bg: white;
+$accordion-button-bg: $accordion-button-active-bg;
+$accordion-button-active-color: shade-color($colour-primary, 10%);
 
 @import "~bootstrap/scss/bootstrap";
 
