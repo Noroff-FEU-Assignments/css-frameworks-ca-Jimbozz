@@ -9,16 +9,14 @@ function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Row>
+        <Row align-items-center>
           <Col md={5} className="footer__icons">
             <FontAwesomeIcon icon={faVimeoV} />
             <FontAwesomeIcon icon={faYoutube} />
           </Col>
-          <Col>
-            <Row className="justify-content-md-between footer__text">
-              <Col md="auto">hello@yay.com</Col>
-              <Col md="auto">Copyright 2020</Col>
-            </Row>
+          <Col className="footer__text">
+            <Col md="auto">hello@yay.com</Col>
+            <Col md="auto">Copyright 2020</Col>
           </Col>
         </Row>
       </Container>
