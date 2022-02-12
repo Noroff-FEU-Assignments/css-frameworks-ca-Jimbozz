@@ -47,7 +47,6 @@
     color: $colour-black;
 
     .svg-inline--fa {
-      height: 2rem;
       color: $colour-dark-grey;
 
       &:hover {
@@ -73,10 +72,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-
-    .svg-inline--fa {
-      height: 2rem;
-    }
   }
 
   .accordion-header {
@@ -90,8 +85,7 @@
       }
     }
   }
-}
-
-.show {
-  border-top: 1px solid red;
+  .show {
+    border-top: 1px solid $colour-primary;
+  }
 }

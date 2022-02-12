@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Row align-items-center>
+        <Row className="align-items-center">
           <Col md={5} className="footer__icons">
             <FontAwesomeIcon icon={faVimeoV} />
             <FontAwesomeIcon icon={faYoutube} />

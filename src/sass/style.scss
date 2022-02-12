@@ -9,13 +9,17 @@ $colour-black: #0a0a0a;
   padding-top: 3rem;
 }
 
+.svg-inline--fa {
+  height: 2rem;
+}
+
 //bootstrap
 $theme-colors: (
   "primary": $colour-primary,
   "dark": $colour-primary,
   "light": $colour-grey,
 );
-$gradient: radial-gradient(rgba(white, 0.2), rgba(#e5e5e5, 0.5));
+$gradient: radial-gradient(rgba(white, 0.2), rgba(rgb(229, 229, 229), 0.5));
 $font-family-base: $primary-font;
 $headings-font-family: "Playfair Display", serif;
 $headings-color: $colour-primary;
@@ -34,6 +38,15 @@ $link-decoration: none;
 $link-color: $colour-black;
 $grid-gutter-width: 4rem;
 $border-radius: 0.4rem;
+$input-border-radius: 0.15rem;
+$input-group-addon-color: white;
+$input-group-addon-border-color: none;
+$input-group-addon-bg: $colour-dark-grey;
+$form-label-margin-bottom: 0.2rem;
+// $form-check-input-width:  ;
+// $form-check-min-height:;
+$form-check-input-border: none;
+$form-check-input-bg: $colour-primary;
 $accordion-bg: $gradient;
 $accordion-color: $colour-primary;
 $accordion-button-active-bg: white;

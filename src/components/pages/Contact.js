@@ -19,16 +19,16 @@ function Contact() {
       <h1 className="contact__heading">Submit your details</h1>
       <Row>
         <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
-          <Form>
+          <Form className="p-4 bg-light bg-gradient">
             <Form.Group className="mb-3" controlId="form.Name">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter name" />
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" />
             </Form.Group>
-            <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>
+            <Form.Label htmlFor="basic-url">Website</Form.Label>
             <InputGroup className="mb-3">
               <InputGroup.Text id="basic-addon3">https://</InputGroup.Text>
               <FormControl id="basic-url" aria-describedby="basic-addon3" />
@@ -45,34 +45,34 @@ function Contact() {
                 label="Allow us to sell your personal details to whomever we want"
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button
+              variant="contact"
+              className="w-100 p-2 rounded-1"
+              type="submit">
               Submit
             </Button>
           </Form>
         </Col>
         <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-          <Row>
-            <div>
-              <FontAwesomeIcon icon={faEnvelope} /> hello@yay.com
-            </div>
-          </Row>
-          <Row>
-            <div>
-              <FontAwesomeIcon icon={faPhone} />
-              123 456 7890
-            </div>
-          </Row>
-          <Row>
-            <div>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
+          <ul className="list-unstyled">
+            <li className="d-flex align-items-center p-3">
+              <FontAwesomeIcon className="me-4" icon={faEnvelope} />
+              <span>hello@yay.com</span>
+            </li>
+            <li className="d-flex align-items-center p-3">
+              <FontAwesomeIcon className="me-4" icon={faPhone} />
+              <span>123 456 7890</span>
+            </li>
+            <li className="address p-3">
+              <FontAwesomeIcon className="me-4" icon={faMapMarkerAlt} />
               <ul className="list-unstyled">
                 <li>123 Some Street</li>
                 <li>Somewhere</li>
                 <li>Some City</li>
                 <li>10000</li>
               </ul>
-            </div>
-          </Row>
+            </li>
+          </ul>
         </Col>
       </Row>
     </Container>
