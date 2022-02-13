@@ -17,7 +17,7 @@ function News() {
   return (
     <Container className="news top__padding">
       <h1 className="news__heading">News</h1>
-      <Pagination className="news__pagination">
+      <Pagination className="news__pagination mb-5">
         <Pagination.Item active>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>
@@ -49,7 +49,7 @@ function News() {
           <Card imgsrc={img8} />
         </Col>
       </Row>
-      <Pagination className="news__pagination--two">
+      <Pagination className="news__pagination--two mt-5">
         <Pagination.Item active>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>

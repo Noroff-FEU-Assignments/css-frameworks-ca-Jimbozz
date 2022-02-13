@@ -7,8 +7,8 @@ function CardUi(props) {
     <Card className="shadow-sm border-0">
       <Card.Img className="img-fluid" variant="top" src={props.imgsrc} alt="" />
       <Card.Body>
-        <Card.Title>Nunc porttitor vel</Card.Title>
-        <Card.Text className="lh-sm">
+        <Card.Title className="mb-3">Nunc porttitor vel</Card.Title>
+        <Card.Text className="lh-sm mb-4">
           Nunc malesuada eget est fringilla dapibus.
         </Card.Text>
         <div className="card__button">
