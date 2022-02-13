@@ -7,8 +7,6 @@
   }
 
   > img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
   }
 }
@@ -23,11 +21,6 @@
 .tabs {
   margin: 4rem auto 10rem auto;
 
-  .nav-tabs {
-    margin-bottom: 0px !important;
-    border-bottom: none !important;
-  }
-
   .tab-content {
     background-color: white;
     padding: 2rem 0px 5rem 0px;
@@ -41,9 +34,6 @@
   }
 
   .tab__icons {
-    display: flex;
-    margin-top: 3rem;
-    gap: 1.5rem;
     color: $colour-black;
 
     .svg-inline--fa {

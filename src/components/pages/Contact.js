@@ -18,7 +18,10 @@ function Contact() {
     <Container className="top__padding">
       <h1 className="my-5">Submit your details</h1>
       <Row>
-        <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
+        <Col
+          className="mb-5"
+          xs={{ span: 12, order: 2 }}
+          md={{ span: 6, order: 1 }}>
           <Form className="p-4 bg-light bg-gradient">
             <Form.Group className="mb-3" controlId="form.Name">
               <Form.Label>Name</Form.Label>

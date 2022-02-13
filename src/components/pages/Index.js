@@ -22,17 +22,21 @@ function index() {
       <Carousel className="top__padding" controls={false} indicators={false}>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 h-100"
             src={SlideOne}
             alt="bicycle and old televisions on shelves"
           />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={SlideTwo} alt="analogue camera" />
+          <img
+            className="d-block w-100 h-100"
+            src={SlideTwo}
+            alt="analogue camera"
+          />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 h-100"
             src={SlideThree}
             alt="broken television"
           />
@@ -48,8 +52,8 @@ function index() {
       </Container>
       <Container className="tabs">
         <Accordion defaultActiveKey="0" className="d-md-none shadow">
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>First</Accordion.Header>
+          <Accordion.Item eventKey="0" className="border-0">
+            <Accordion.Header className="border-bottom">First</Accordion.Header>
             <Accordion.Body>
               <p>
                 Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
@@ -72,8 +76,10 @@ function index() {
               </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Second</Accordion.Header>
+          <Accordion.Item eventKey="1" className="border-0">
+            <Accordion.Header className="border-bottom">
+              Second
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
@@ -96,8 +102,8 @@ function index() {
               </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>Third</Accordion.Header>
+          <Accordion.Item eventKey="2" className="border-0">
+            <Accordion.Header className="border-bottom">Third</Accordion.Header>
             <Accordion.Body>
               <p>
                 Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
@@ -125,7 +131,7 @@ function index() {
           <Tabs
             defaultActiveKey="first"
             id="uncontrolled-tab-example"
-            className="mb-3">
+            className="border-0">
             <Tab eventKey="first" title="First">
               <Container>
                 <Row>
@@ -144,7 +150,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </div>
-                    <div className="tab__icons d-flex align-items-center">
+                    <div className="tab__icons d-flex align-items-center mt-5 gap-3">
                       SHARE
                       <Link to="/#">
                         <FontAwesomeIcon icon={faFacebookF} />
@@ -175,7 +181,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </div>
-                    <div className="tab__icons d-flex align-items-center">
+                    <div className="tab__icons d-flex align-items-center mt-5 gap-3">
                       <div>SHARE</div>
                       <Link to="/#">
                         <FontAwesomeIcon icon={faFacebookF} />
@@ -206,7 +212,7 @@ function index() {
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </div>
-                    <div className="tab__icons d-flex align-items-center">
+                    <div className="tab__icons d-flex align-items-center mt-5 gap-3">
                       SHARE
                       <Link to="/#">
                         <FontAwesomeIcon icon={faFacebookF} />
