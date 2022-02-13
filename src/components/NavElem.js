@@ -12,10 +12,14 @@ function NavElem() {
   return (
     <Navbar bg="light" expand="md" className="fixed-top">
       <Container>
-        <Navbar.Brand href="/">The YAY Company</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Brand href="/" className="pe-5 fst-italic">
+          The YAY Company
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" className="border-0" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+          <Nav
+            className="me-auto my-2 my-lg-0 gap-3 align-items-start align-items-sm-center"
+            navbarScroll>
             <NavLink className={"nav__style"} to="/">
               Home
             </NavLink>

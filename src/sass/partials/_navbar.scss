@@ -1,8 +1,4 @@
 .navbar {
-  &-toggler {
-    border: none;
-  }
-
   .nav__style {
     padding-left: 1rem;
 
@@ -13,19 +9,7 @@
 
   &-brand {
     font-family: $headings-font-family;
-    font-style: italic;
     color: $colour-primary !important;
-    font-weight: 600;
-    padding-right: 2rem;
-  }
-
-  &-nav {
-    gap: 1rem;
-    align-items: flex-start;
-
-    @media (min-width: 767px) {
-      align-items: center;
-    }
   }
 
   .active {
