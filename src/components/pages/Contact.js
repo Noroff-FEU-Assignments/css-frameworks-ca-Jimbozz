@@ -16,7 +16,7 @@ import {
 function Contact() {
   return (
     <Container className="top__padding">
-      <h1 className="contact__heading">Submit your details</h1>
+      <h1 className="my-5">Submit your details</h1>
       <Row>
         <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
           <Form className="p-4 bg-light bg-gradient">
@@ -41,6 +41,7 @@ function Contact() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check
+                className="d-flex align-items-center"
                 type="checkbox"
                 label="Allow us to sell your personal details to whomever we want"
               />
@@ -63,7 +64,7 @@ function Contact() {
               <FontAwesomeIcon className="me-4" icon={faPhone} />
               <span>123 456 7890</span>
             </li>
-            <li className="address p-3">
+            <li className="address p-3 d-flex">
               <FontAwesomeIcon className="me-4" icon={faMapMarkerAlt} />
               <ul className="list-unstyled">
                 <li>123 Some Street</li>
